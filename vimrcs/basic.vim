@@ -55,6 +55,10 @@ command W w !sudo tee % > /dev/null
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Display numbers on lines
+:set number
+:set relativenumber
+
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
 
@@ -139,7 +143,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme desert
+    colorscheme vim-irblack
 catch
 endtry
 
